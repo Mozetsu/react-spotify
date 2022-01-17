@@ -13,8 +13,6 @@ function Sidebar() {
 			spotifyApi.getUserPlaylists(session.user).then((data) => {
 				setPlaylists(data.body.items);
 			});
-		} else {
-			console.log('No token');
 		}
 	}, [session, spotifyApi]);
 
