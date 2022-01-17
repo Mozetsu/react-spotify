@@ -13,7 +13,7 @@ async function refreshAccessToken(token) {
 			...token,
 			accessToken: refreshedToken.accessToken,
 			accessTokenExpires: Date.now() + refreshedToken.expires_in * 1000,
-			refreshToken: refreshedToken.refreshToken ?? token.refreshToken,
+			refreshToken: refreshedToken.refresh_token ?? token.refreshToken,
 		};
 	} catch (error) {
 		return {
@@ -51,7 +51,7 @@ export default NextAuth({
 			}
 
 			// Returns previous token if the access token has not expired yet
-			if (Date.now() < account.accessTokenExpires) {
+			if (Date.now() < token.accessTokenExpires) {
 				return token;
 			}
 
