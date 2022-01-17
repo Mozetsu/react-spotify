@@ -4,7 +4,7 @@ function Login({ providers }) {
 	return (
 		<div className="flex flex-col items-center bg-black min-h-screen w-full justify-center">
 			<img
-				className="h-12 mb-10"
+				className="h-14 mb-10"
 				src="https://raw.githubusercontent.com/Mozetsu/react-spotify/main/public/spotify.svg"
 				alt=""
 			></img>
@@ -12,7 +12,7 @@ function Login({ providers }) {
 				<div key={provider.name}>
 					<button
 						onClick={() => signIn(provider.id, { callbackUrl: '/' })}
-						className="bg-[#18D860] text-white p-5 rounded-full"
+						className="bg-[#18D860] text-base font-bold text-white p-4 rounded"
 					>
 						Login with {provider.name}
 					</button>
