@@ -22,6 +22,7 @@ Users are presented with a login page where they can authenticate in order to ac
 
 P.S. This application can be interpreted as a "remote player" as it uses an active Spotify session to process the API requests. So, make sure to have a spotify session active (Desktop or Mobile).
 
+P.S.2 As Spotify's API is limited to my account you won't be able to login.
 # What I Have Learned
 
 After completing the project I have a better understanding on how to develop applications using Next JS. However, there's still plenty to cover as JS Frameworks are something new to me. Applications can be handled by modifying (getting, setting) their states which can be translated to "current existing data" that can be consumed such as user details (username, session tokens, etc.), lists, text, images... Basically all kinds of data that holds value. When we need to fetch data between multiple components we cannot should use something like recoil which behaves as an extended version of useState making the data accessible globally by wrapping the main component in the \_app.js file in a RecoilRoot component. I also got to know how efficient it is to create User Interfaces with Tailwind CSS and how fast it can make the entire process. Never had worked with another CSS Framework other than Bulma before and Tailwind really delivers on its promise.
