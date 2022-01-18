@@ -2,6 +2,10 @@
 
 Spotify Clone built with Next JS 12 implementing the latest \_middleware features as well as next authentication. The project consumes Spotify's API in order to get the user's data (User details, Playlists).
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mozetsu/react-spotify/main/public/213124123.png" width="100%" alt=" />
+</p>
+
 # Stack
 
 - Next JS
