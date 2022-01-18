@@ -1,15 +1,14 @@
 import { getProviders, signIn } from 'next-auth/react';
-import Image from 'next/image';
 
 function Login({ providers }) {
 	return (
 		<div className="flex flex-col items-center bg-black min-h-screen w-full justify-center">
-			<Image
+			<img
 				src="https://raw.githubusercontent.com/Mozetsu/react-spotify/main/public/spotify.svg"
 				alt=""
 				width={180}
 				height={50}
-			></Image>
+			/>
 			{Object.values(providers).map((provider) => (
 				<div key={provider.name}>
 					<button

@@ -6,7 +6,6 @@ import { playlistState, playlistIdState } from '../atoms/playlistAtom';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import spotifyApi from '../lib/spotify';
 import Songs from './Songs';
-import Image from 'next/image';
 
 const colors = [
 	'from-indigo-500',
