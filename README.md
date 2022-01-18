@@ -1,20 +1,26 @@
 # React Spotify
 
-Spotify Clone built with Next JS 12 implementing the latest \_middleware features as well as next authentication. The project consumes Spotify's API in order to get the user's data (User details, Playlists).
+Spotify Clone built with Next JS 12 implementing the latest features as well as next authentication. The project consumes Spotify's API in order to get the user's data (User details, Playlists).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mozetsu/react-spotify/main/public/213124123.png" width="100%" alt=" />
+  <img src="https://raw.githubusercontent.com/Mozetsu/react-spotify/main/public/213124123.png" width="100%" />
 </p>
+
+# Objectives
+
+Started this project to get a better understanding of what it's like to build a React application using Next JS 12 along with its new features (Page-based routing, Middleware, etc).
+
+# Overview
+
+Users are presented with a login page where they can authenticate in order to acess the application. Requests are made to Spotify's API and when succeded users receive an access token which will be used to fetch their spotify data. Users are redirected to the home ("/") directory where they have all their playlists on the left sidebar. The current selected playlist will be presented in the center with a gradient in the header, as well as the playlist's image and name. At the bottom of the screen the control bar is presented allowing users to play/pause, and set the volume of current playing songs.
+
+p.s. This application can be interpreted as a "remote player" as it uses an active Spotify session to process the API requests. So, make sure to have a spotify session active (Desktop or Mobile).
 
 # Stack
 
 - Next JS
 - Tailwind CSS
 - Vercel
-
-# Objectives
-
-Started this project to get a better understanding of what it's like to build a React application using Next JS 12 along with its new features (Page-based routing, Middleware, etc).
 
 # What I Have Learned
 
