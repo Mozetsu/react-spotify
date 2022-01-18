@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import { SessionProvider } from 'next-auth/react';
 import { RecoilRoot } from 'recoil';
 
-function MyApp({ Component, pageProps: { session, ...pageProps } }) {
+function App({ Component, pageProps: { session, ...pageProps } }) {
 	return (
 		<SessionProvider session={session}>
 			<RecoilRoot>
@@ -12,4 +12,4 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 	);
 }
 
-export default MyApp;
+export default App;
